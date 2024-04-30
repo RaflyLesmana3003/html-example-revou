@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HALAMAN HOME</title>
+    <link rel="icon" href="revou-logo.png">
+    <meta name="title" content="portofolio website" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="halaman home description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./revou-logo.png">
+    <link rel="stylesheet" type="text/css" href="./style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="">
+
+    <div class="header-section">
+        <div class="navigation">
+            <img src="./image/Avatar.png" alt="avatar" class="avatar" style="vertical-align: middle;">
+            <span style="vertical-align: middle;">Home</span>
+            <span style="vertical-align: middle;">Experiences</span>
+            <span style="vertical-align: middle;">About Me</span>
+        </div>
+
+        <div>
+            <a href="https://wa.me/62831167490">
+                <div style="display: inline-block;" class="social-image">
+                    <img src="./image/Whatsapp.png" alt="Whatsapp" style="vertical-align: middle;">
+                    <span style="vertical-align: middle;">Whatsapp</span>
+                </div>
+            </a>
+            <div style="display: inline-block;" class="social-image">
+                <img src="./image/Discord.png" alt="Discord" style="vertical-align: middle;">
+                <span style="vertical-align: middle;">raflylesmana</span>
+            </div>
+            <a href="https://www.linkedin.com/in/rafly-lesmana/" target="_blank">
+                <div style="display: inline-block;" class="social-image">
+                    <img src="./image/LinkedIn.png" alt="LinkedIn" style="vertical-align: middle;">
+                    <span style="vertical-align: middle;">LinkedIn</span>
+                </div>
+            </a>
+            <a href="mailto:raflylesmana112@gmail.com">
+                <div style="display: inline-block; color: #E6E9FB;">
+                    <span style="vertical-align: middle;">
+                        Contact Me
+                    </span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="first-section">
+        <div class="header-copy">
+            <div>
+                <span>Hi, I'm Rafly Lesmana 👋🏻</span>
+                <h1>
+                    A Full-Stack Software Engineer, and <br>
+                    professional master of Ctrl+C and Ctrl+V.
+                </h1>
+            </div>
+        </div>
+        <div style="position: relative; right: -200px; width: 40%;">
+            <img class="planet" src="./image/Orb planet.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="experience-section">
+        <h1 align="center">
+            Contact me
+        </h1>
+        <div>
+            <form action="/submit.php" method="post">
+                <div style="display: flex;">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" placeholder="please input your name" minlength="2" required
+                        oninvalid="this.setCustomValidity('minimal 2 char bos!')">
+                </div>
+
+                <div>
+                    <label for="name">phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="please input your phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+
+                <div>
+                    <label for="name">message</label>
+                    <textarea name="message" id="">message</textarea>
+                </div>
+                <button type="submit" name="" id="">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
